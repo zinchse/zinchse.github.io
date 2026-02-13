@@ -84,7 +84,7 @@ body.sticky-bottom-footer {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .profile img {
@@ -116,8 +116,8 @@ strong {
 }
 
 body {
-  font-family: "Courier New", "Courier Bold", Courier, monospace;
-  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
 }
 
 strong, b {
@@ -489,9 +489,6 @@ footer.sticky-bottom {
 .projects a:hover .card-title {
   color: var(--global-theme-color);
 }
-.projects .card img {
-  width: 100%;
-}
 .projects .card-item {
   width: auto;
   margin-bottom: 10px;
@@ -500,10 +497,13 @@ footer.sticky-bottom {
   display: flex;
   align-items: center;
 }
-.projects .grid-sizer,
 .projects .grid-item {
-  width: 250px;
-  margin-bottom: 10px;
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+.projects .card img {
+  width: 100%;
+  height: auto;
 }
 .projects h2.category {
   color: var(--global-divider-color);

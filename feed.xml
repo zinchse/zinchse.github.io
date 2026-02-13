@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://zinchse.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zinchse.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-02-16T16:23:11+00:00</updated><id>https://zinchse.github.io/feed.xml</id><title type="html">blank</title><subtitle>Sergey Zinchenko&apos;s portfolio site
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://zinchse.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zinchse.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-02-13T15:00:51+00:00</updated><id>https://zinchse.github.io/feed.xml</id><subtitle>Sergey Zinchenko&apos;s portfolio site
 </subtitle><entry><title type="html">True Parallelism vs Python</title><link href="https://zinchse.github.io/blog/2023/parallel-python/" rel="alternate" type="text/html" title="True Parallelism vs Python" /><published>2023-11-24T13:59:00+00:00</published><updated>2023-11-24T13:59:00+00:00</updated><id>https://zinchse.github.io/blog/2023/parallel-python</id><content type="html" xml:base="https://zinchse.github.io/blog/2023/parallel-python/"><![CDATA[<h1 id="introduction">Introduction</h1>
 
 <h3 id="goals">Goals</h3>
@@ -158,7 +158,7 @@ io bound tasks can be accelerated in python by both threads and processes</p>
 <p>/* I did it all honestly and posted the notebook <a href="https://github.com/zinchse/parallel_python/tree/main">here</a>. The visualization of the result is roughly as follows: */</p>
 
 <figure style="display: block; margin: auto; text-align: center;">
-    <img src="/assets/img/cython_vs_python.png" alt="Cython vs Python" width="500px" />
+    <img src="/assets/img/parallel_python_post/cython_vs_python.png" alt="Cython vs Python" width="500px" />
     <figcaption>
         An example of accelerating Python's threads 
         <br />
@@ -177,7 +177,7 @@ io bound tasks can be accelerated in python by both threads and processes</p>
   <li><a href="https://www.youtube.com/watch?v=nR8WhdcRJwM&amp;t=3141s&amp;ab_channel=ComputerScienceCenter">video 2, very hot!</a></li>
   <li><a href="https://www.youtube.com/watch?v=w2-QoVB1TnQ&amp;ab_channel=ComputerScienceCenter">video 3</a></li>
   <li><a href="https://www.geeksforgeeks.org/internal-working-of-python/">gksfgks</a></li>
-</ul>]]></content><author><name></name></author><category term="code" /><summary type="html"><![CDATA[Breaking stereotypes about parallelism in python with examples.]]></summary></entry><entry><title type="html">Why is understanding the physical implementation of memory useful?</title><link href="https://zinchse.github.io/blog/2023/padding/" rel="alternate" type="text/html" title="Why is understanding the physical implementation of memory useful?" /><published>2023-09-02T14:59:00+00:00</published><updated>2023-09-02T14:59:00+00:00</updated><id>https://zinchse.github.io/blog/2023/padding</id><content type="html" xml:base="https://zinchse.github.io/blog/2023/padding/"><![CDATA[<h1 id="data-compression">Data compression</h1>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Breaking stereotypes about parallelism in python with examples.]]></summary></entry><entry><title type="html">Why is understanding the physical implementation of memory useful?</title><link href="https://zinchse.github.io/blog/2023/padding/" rel="alternate" type="text/html" title="Why is understanding the physical implementation of memory useful?" /><published>2023-09-02T14:59:00+00:00</published><updated>2023-09-02T14:59:00+00:00</updated><id>https://zinchse.github.io/blog/2023/padding</id><content type="html" xml:base="https://zinchse.github.io/blog/2023/padding/"><![CDATA[<h1 id="data-compression">Data compression</h1>
 
 <p>I recently <a href="https://zinchse.github.io/blog/2023/yandex-training/">[talked]</a> about the moment when <code class="language-plaintext highlighter-rouge">Yandex.Trainings</code> put me on the spot. The last problem in this contest can be reduced to a BFS on a state graph. I got into it in a minute, spent two more on the code. And? My first submit got <code class="language-plaintext highlighter-rouge">MLE</code> (memory limit error). I thought: “Okay, I’ll fix it”. I optimized the code and… I got MLE again! On a different test, but there is no difference. All the time of the contest I was beating myself up over it, thinking: “What the hell is this?”. But it didn’t work. I guess sometimes even I can be wrong…</p>
 
@@ -199,7 +199,7 @@ Suppose we have numbers \(a\) and \(b\), each of which is in the range \([0; \, 
 
 <figure>
     <div style="text-align:center;">
-        <img src="/assets/img/zip_example.png" alt="alignment example" width="450px" />
+        <img src="/assets/img/padding_post/zip_example.png" alt="alignment example" width="450px" />
         <figcaption>
             An example of compressing two integers into one 
             <br />
@@ -220,7 +220,7 @@ Suppose we have numbers \(a\) and \(b\), each of which is in the range \([0; \, 
 
 <figure>
     <div style="text-align:center;">
-        <img src="/assets/img/alignment_example.png" alt="alignment example" width="450px" />
+        <img src="/assets/img/padding_post/alignment_example.png" alt="alignment example" width="450px" />
         <figcaption>
             An example of where additional read operations
             <br />
@@ -243,7 +243,7 @@ Suppose we have numbers \(a\) and \(b\), each of which is in the range \([0; \, 
 
 <figure>
     <div style="text-align:center;">
-        <img src="/assets/img/padding_example.png" alt="alignment example" width="450px" />
+        <img src="/assets/img/padding_post/padding_example.png" alt="alignment example" width="450px" />
         <figcaption>
             An example of how the allocation of extra bytes can be used
             <br />
@@ -278,7 +278,7 @@ Suppose we have numbers \(a\) and \(b\), each of which is in the range \([0; \, 
 
 <figure>
     <div style="text-align:center;">
-        <img src="/assets/img/bloom_example.png" alt="alignment example" width="450px" />
+        <img src="/assets/img/padding_post/bloom_example.png" alt="alignment example" width="450px" />
         <figcaption>
             Knowledge about physical data storage can be used to improve
             <br />
@@ -291,14 +291,8 @@ Suppose we have numbers \(a\) and \(b\), each of which is in the range \([0; \, 
 
 <p>In practice I faced such a situation when fields of my structure were hash values of some object. My structures were often used for expensive comparison of objects, which was often avoided by hash matching check. By introducing fields with the values of other hash functions, I was able to significantly reduce collisions. In fact, I turned my comparison algorithm into something very similar to the Bloom filter. This <strong>improved</strong> my system performance, and <strong>I didn’t waste a single byte of extra space</strong> !</p>
 
-<p>Some might argue: “Why would You go off in the direction of the Bloom filter? Ok, You have more space, take a more complex hash function. You might even have fewer collisions with it!”. Yeah. Thanks for the idea, but for backward compatibility, I had to leave the previous field as it is. That’s the main beauty of this approach - with the help of memory management knowledge You can <strong>add new functionality</strong> to Your structure <strong>without any overhead and consequences</strong>!</p>
-
-<h1 id="conclusion">Conclusion</h1>
-
-<div align="center">
-<i>Knowledge is power and failures can be turned into useful lessons :)</i>
-</div>]]></content><author><name></name></author><category term="architecture," /><category term="algorithms" /><summary type="html"><![CDATA[From data compression to padding and Bloom's filter]]></summary></entry><entry><title type="html">Leetcode Marathon (**do not repeat!**)</title><link href="https://zinchse.github.io/blog/2023/leetcode-challenge/" rel="alternate" type="text/html" title="Leetcode Marathon (**do not repeat!**)" /><published>2023-08-12T14:59:00+00:00</published><updated>2023-08-12T14:59:00+00:00</updated><id>https://zinchse.github.io/blog/2023/leetcode-challenge</id><content type="html" xml:base="https://zinchse.github.io/blog/2023/leetcode-challenge/"><![CDATA[<div style="text-align:center;">
-    <img src="/assets/img/leetcode_challenge.jpg" alt="contest logo" width="450px" />
+<p>Some might argue: “Why would You go off in the direction of the Bloom filter? Ok, You have more space, take a more complex hash function. You might even have fewer collisions with it!”. Yeah. Thanks for the idea, but for backward compatibility, I had to leave the previous field as it is. That’s the main beauty of this approach - with the help of memory management knowledge You can <strong>add new functionality</strong> to Your structure <strong>without any overhead and consequences</strong>!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[From data compression to padding and Bloom's filter]]></summary></entry><entry><title type="html">Leetcode Marathon (**do not repeat!**)</title><link href="https://zinchse.github.io/blog/2023/leetcode-challenge/" rel="alternate" type="text/html" title="Leetcode Marathon (**do not repeat!**)" /><published>2023-08-12T14:59:00+00:00</published><updated>2023-08-12T14:59:00+00:00</updated><id>https://zinchse.github.io/blog/2023/leetcode-challenge</id><content type="html" xml:base="https://zinchse.github.io/blog/2023/leetcode-challenge/"><![CDATA[<div style="text-align:center;">
+    <img src="/assets/img/leetcode_challenge_post/leetcode_challenge.jpg" alt="contest logo" width="450px" />
 </div>
 
 <p><br /></p>
@@ -455,14 +449,12 @@ And the possible neighbors are taken by iterating over all possible directions o
   <li>
     <p><strong><a href="https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/description/">[number-of-subsequences-that-satisfy-the-given-sum-condition]</a></strong>: trick to represent the solution as a binary string</p>
   </li>
-</ul>]]></content><author><name></name></author><category term="code," /><category term="algorithms," /><category term="contest" /><summary type="html"><![CDATA[the attempt to solve leetcodes's problems 100 days in a row]]></summary></entry><entry><title type="html">Yandex Training 3.0 - Hints and Results</title><link href="https://zinchse.github.io/blog/2023/yandex-training/" rel="alternate" type="text/html" title="Yandex Training 3.0 - Hints and Results" /><published>2023-06-22T13:59:00+00:00</published><updated>2023-06-22T13:59:00+00:00</updated><id>https://zinchse.github.io/blog/2023/yandex-training</id><content type="html" xml:base="https://zinchse.github.io/blog/2023/yandex-training/"><![CDATA[<p><img src="/assets/img/contest_logo.png" alt="contest logo" width="800px" /></p>
-
-<p>Path <strong>from</strong> <em>“count the number of characters”</em>  <strong>to</strong>  <em>“compress graph by going to graph on connected components, build common transitive vertex to reduce number of edges, set problem on state graph and solve it bypassing 0-1 BFS”</em>, or just <a href="https://yandex.ru/yaintern/algorithm-training"><code class="language-plaintext highlighter-rouge">[Yandex.Training 3.0]</code></a> :D</p>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[an attempt to solve leetcodes's problems 100 days in a row]]></summary></entry><entry><title type="html">Yandex Training 3.0 - Hints and Results</title><link href="https://zinchse.github.io/blog/2023/yandex-training/" rel="alternate" type="text/html" title="Yandex Training 3.0 - Hints and Results" /><published>2023-06-22T13:59:00+00:00</published><updated>2023-06-22T13:59:00+00:00</updated><id>https://zinchse.github.io/blog/2023/yandex-training</id><content type="html" xml:base="https://zinchse.github.io/blog/2023/yandex-training/"><![CDATA[<p>Path <strong>from</strong> <em>“count the number of characters”</em>  <strong>to</strong>  <em>“compress graph by going to graph on connected components, build common transitive vertex to reduce number of edges, set problem on state graph and solve it bypassing 0-1 BFS”</em>, or just <a href="https://yandex.ru/yaintern/algorithm-training"><code class="language-plaintext highlighter-rouge">[Yandex.Training 3.0]</code></a> :D</p>
 
 <h3 id="thoughts">Thoughts</h3>
 
 <p>I’ve already seen most of the problems from there in some form, but I really liked the last block. The concept of the <code class="language-plaintext highlighter-rouge">State Graph</code> is very cool, I recommend everyone to get acquainted.
-You can find my solutions and the template with optimal and universal I/O <a href="https://github.com/zinchse/_contests">[here]</a>.</p>
+You can find my solutions and the template with optimal and universal I/O <a href="https://github.com/zinchse/_yt">[here]</a>.</p>
 
 <p>As a result, I took <code class="language-plaintext highlighter-rouge">1-144</code>th place in the olympiad division, and was the first among those who were left without prizes, both in the both divisions. Interestingly, I wrote an algorithm with optimal asymptotics, which did not pass all the tests, and most of the time I tried to start it. But without success… So, after a couple of months I got back to this problem, and found something amazing (<code class="language-plaintext highlighter-rouge">really :)</code>). About this I will report in a separate post.</p>
 
@@ -472,7 +464,7 @@ You can find my solutions and the template with optimal and universal I/O <a hre
   <li>
     <p><strong><code class="language-plaintext highlighter-rouge">Input/Output</code> is an important part of the problem</strong></p>
 
-    <p>You have to think about how fast you read and write data. To combat this problem, I wrote a special <a href="https://github.com/zinchse/_contests/blob/main/yandex%20training%203.0/template.py">[template]</a> in which You need to organize only one function <code class="language-plaintext highlighter-rouge">solve</code>, the data is processed by other methods in an optimal way.</p>
+    <p>You have to think about how fast you read and write data. To combat this problem, I wrote a special <a href="https://github.com/zinchse/_yt/blob/main/yandex%20training%203.0/template.py">[template]</a> in which You need to organize only one function <code class="language-plaintext highlighter-rouge">solve</code>, the data is processed by other methods in an optimal way.</p>
   </li>
   <li>
     <p><strong>The problem’s input limits are the most important information in the problem’s definition</strong></p>
@@ -489,4 +481,4 @@ You can find my solutions and the template with optimal and universal I/O <a hre
 
     <p>Yes, this is quite a basic rule, but once in an asymptotically optimal solution I ran into this, and for a long time I could not understand what solution the authors of the problem expected from me… The reason for this phenomenon is the physical arrangement of array memory elements and random access speed</p>
   </li>
-</ul>]]></content><author><name></name></author><category term="code," /><category term="algorithms," /><category term="contest" /><summary type="html"><![CDATA[general conclusions after participating in the contest]]></summary></entry></feed>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[general conclusions after participating in the contest]]></summary></entry></feed>
