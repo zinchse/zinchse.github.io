@@ -3,7 +3,6 @@ layout: post
 title: True Parallelism vs Python
 date: 2023-11-24 13:59:00
 description: Breaking stereotypes about parallelism in python with examples. 
-categories: code
 disqus_comments: true
 related_posts: false
 
@@ -185,7 +184,7 @@ What do we end up with? If we have the ability to write code that won't lock the
 /* I did it all honestly and posted the notebook [here](https://github.com/zinchse/parallel_python/tree/main). The visualization of the result is roughly as follows: */
 
 <figure style="display: block; margin: auto; text-align: center;">
-    <img src="/assets/img/cython_vs_python.png" alt="Cython vs Python" width="500px">
+    <img src="/assets/img/parallel_python_post/cython_vs_python.png" alt="Cython vs Python" width="500px">
     <figcaption>
         An example of accelerating Python's threads 
         <br>

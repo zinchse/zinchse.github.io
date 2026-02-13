@@ -3,22 +3,16 @@ layout: post
 title: Yandex Training 3.0 - Hints and Results
 date: 2023-06-22 13:59:00
 description: general conclusions after participating in the contest
-categories: code, algorithms, contest
 disqus_comments: true
 related_posts: false
-img: /assets/img/_contest_logo.jpg
 ---
-
-
-![contest logo](/assets/img/contest_logo.png){:width="800px"}
-
 
 Path **from** *"count the number of characters"*  **to**  *"compress graph by going to graph on connected components, build common transitive vertex to reduce number of edges, set problem on state graph and solve it bypassing 0-1 BFS"*, or just [`[Yandex.Training 3.0]`](https://yandex.ru/yaintern/algorithm-training) :D    
 
 ### Thoughts
 
 I've already seen most of the problems from there in some form, but I really liked the last block. The concept of the `State Graph` is very cool, I recommend everyone to get acquainted.
-You can find my solutions and the template with optimal and universal I/O [[here]](https://github.com/zinchse/_contests).
+You can find my solutions and the template with optimal and universal I/O [[here]](https://github.com/zinchse/_yt).
 
 As a result, I took `1-144`th place in the olympiad division, and was the first among those who were left without prizes, both in the both divisions. Interestingly, I wrote an algorithm with optimal asymptotics, which did not pass all the tests, and most of the time I tried to start it. But without success... So, after a couple of months I got back to this problem, and found something amazing (`really :)`). About this I will report in a separate post.
 
@@ -26,7 +20,7 @@ The main experience that I took away from these trainings:
 
 -   **`Input/Output` is an important part of the problem**
 
-    You have to think about how fast you read and write data. To combat this problem, I wrote a special [[template]](https://github.com/zinchse/_contests/blob/main/yandex%20training%203.0/template.py) in which You need to organize only one function `solve`, the data is processed by other methods in an optimal way.
+    You have to think about how fast you read and write data. To combat this problem, I wrote a special [[template]](https://github.com/zinchse/_yt/blob/main/yandex%20training%203.0/template.py) in which You need to organize only one function `solve`, the data is processed by other methods in an optimal way.
 
 -   **The problem's input limits are the most important information in the problem's definition**
 

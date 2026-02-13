@@ -2,11 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title:  # the website title (if blank, full name will be used instead)
 first_name: Sergey
 middle_name: E.
 last_name: Zinchenko
-email: zinch.s.e@gmail.com 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Sergey Zinchenko's portfolio site
 footer_text: >
@@ -16,7 +15,7 @@ footer_text: >
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: !  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://zinchse.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
@@ -55,7 +54,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 600px
+max_width: 800px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -72,16 +71,15 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 
 github_username: zinchse # your GitHub user name
-gitlab_username: # your GitLab user name
-twitter_username: zinchse # your Twitter handle
+twitter_username: # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: zinchse # your LinkedIn user name
-telegram_username: zinchse # your Telegram user name
-scholar_userid: # your Google Scholar ID
+telegram_username: # your Telegram user name
+scholar_userid: fH3stAoAAAAJ #your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # your ORCID ID
-medium_username: zinchse # your Medium username
+medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
 osf_id: # your OSF ID
@@ -119,9 +117,9 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: zinchse # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: thoughts, notes, uninteresting things
+# blog_name: zinchse # blog_name will be displayed in your blog page
+blog_nav_title: Notes # your blog must have a title for it to be displayed in the nav bar
+blog_description: My thoughts, notes and uninteresting things
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -156,8 +154,8 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@mordiggian174/feed
+  # - name: medium.com
+  #   rss_url: https://medium.com/@mordiggian174/feed
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -251,14 +249,14 @@ jekyll-archives:
   enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
   layouts:
     year: archive-year
-    tag: archive-tag
+    # tag: archive-tag
     category: archive-category
   permalinks:
     year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
+    # tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['code', 'algorithms', 'math', 'contest'] # this tags will be dispalyed on the front page of your blog
+# display_tags: ['code', 'algorithms', 'math', 'contest'] # this tags will be dispalyed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

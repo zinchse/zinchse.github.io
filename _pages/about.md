@@ -1,34 +1,25 @@
 ---
 layout: about
-title: 
+title: Homepage
 permalink: /
-subtitle: ML & Database researcher and developer
+subtitle: 
 
 profile:
   align: right
-  image: me_new.jpg # me2.jpg
-  image_circular: false # crops the image to make it circular
+  image: main_picture.jpg 
+  image_circular: false 
   address: >
     <p>@zinchse</p>
-    <p>Russia, Novosibirsk</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
+# Sergey E. **Zinchenko**
 
+### Machine Learning & Mathematics
 
-Hello! 👋
+I'm an R&D engineer (3+ years) with expertise in algorithm design and learned systems. My work spans discrete optimization, deep learning, and system performance. I've built high-performance systems that significantly outperform existing solutions. I've published in top venues (NN Journal Q1, ICML) on neural network ensembling and optimization. Math olympiad winner (cryptography 2023, mathematics 2022). Currently exploring deep learning and quantitative finance.
 
-I'm master student majoring in Computer Science. Developing intelligent optimization systems is what I do in `Huawei` :) 
-
-I am currently specializing in database acceleration. Using machine learning and discrete optimization techniques, I'm improving existing solutions and developing new ones. 
-
-In free time I listen to rap 🎧 and make bad jokes 🤦‍♂️ 
-
-(and leetcode, ofc ... 💻)
-
-
-<!-- Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically. -->
+<a href="/assets/pdf/resume.pdf"><i class="fas fa-file-pdf"></i> Resume</a>

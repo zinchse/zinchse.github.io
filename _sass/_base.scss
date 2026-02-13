@@ -20,8 +20,8 @@ strong {
 }
 
 body {
-   font-family: 'Courier New', 'Courier Bold', Courier, monospace;
-   font-size: 18px;
+  font-family: 'Inter', sans-serif; //font-family: 'Courier New', 'Courier Bold', Courier, monospace;
+  font-size: 20px;
 }
 
 strong, b {
@@ -507,12 +507,6 @@ footer.sticky-bottom {
     }
   }
 
-  .card {
-    img {
-      width: 100%;
-    }
-  }
-
   .card-item {
     width: auto;
     margin-bottom: 10px;
@@ -523,10 +517,16 @@ footer.sticky-bottom {
     }
   }
 
-  .grid-sizer,
   .grid-item {
-    width: 250px;
-    margin-bottom: 10px;
+    width: calc(50% - 10px);
+    margin: 5px;
+  }
+
+  .card {
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   h2.category {

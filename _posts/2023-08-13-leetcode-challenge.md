@@ -2,15 +2,14 @@
 layout: post
 title: Leetcode Marathon (**do not repeat!**)
 date: 2023-08-12 14:59:00
-description: the attempt to solve leetcodes's problems 100 days in a row
-categories: code, algorithms, contest
+description: an attempt to solve leetcodes's problems 100 days in a row
 disqus_comments: true
 related_posts: false
-img: /assets/img/leetcode_challenge.jpg
+img: /assets/img/leetcode_challenge_post/leetcode_challenge.jpg
 ---
 
 <div style="text-align:center;">
-    <img src="/assets/img/leetcode_challenge.jpg" alt="contest logo" width="450px">
+    <img src="/assets/img/leetcode_challenge_post/leetcode_challenge.jpg" alt="contest logo" width="450px">
 </div>
 
  <br>
